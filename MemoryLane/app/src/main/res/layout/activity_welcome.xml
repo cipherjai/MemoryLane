@@ -47,7 +47,7 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:paddingTop="20dp"
+        android:paddingTop="30dp"
         android:textColor="#ffffff" />
 
     <Button
@@ -55,12 +55,12 @@
         android:layout_height="wrap_content"
         android:text="Ok ! Lets Create !"
         android:id="@+id/button"
-        android:layout_marginTop="84dp"
         android:nestedScrollingEnabled="false"
         android:background="#263490"
-        android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true"
         android:textColor="#ffffff"
-        android:elevation="8dp" />
+        android:elevation="8dp"
+        android:layout_marginBottom="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
