@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Memory Lane</string>
+    <string name="title_activity_home__calendar">Home_Calendar</string>
 </resources>
