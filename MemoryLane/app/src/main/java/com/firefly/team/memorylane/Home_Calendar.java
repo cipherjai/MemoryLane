@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.CalendarView;
 //import android.widget.CalendarView;
 
-public class Home_Calendar extends Activity implements OnDateChangeListener {
+public class Home_Calendar extends AppCompatActivity implements  CalendarView.OnDateChangeListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class Home_Calendar extends Activity implements OnDateChangeListener {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         CalendarView cw = (CalendarView)findViewById(R.id.calendarView);
-        cw setOnDateChangeListener(Home_Calendar.this);
+        cw.setOnDateChangeListener(Home_Calendar.this);
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -31,9 +31,11 @@ public class Home_Calendar extends Activity implements OnDateChangeListener {
             }
         });
     }
+
+
     @Override
-    public void onSelectedDayChange(CalenderView arg0,int arg1, int arg2, int arg 3){
+    public void onSelectedDayChange(CalendarView view, int year, int month, int dayOfMonth) {
+
 
     }
-
 }
